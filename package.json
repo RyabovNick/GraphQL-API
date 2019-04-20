@@ -1,0 +1,30 @@
+{
+  "name": "GraphQL-API",
+  "version": "1.0.0",
+  "description": "https://www.apollographql.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyabovNick/GraphQL-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyabovNick/GraphQL-API/issues"
+  },
+  "homepage": "https://github.com/RyabovNick/GraphQL-API#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0"
+  }
+}
