@@ -1,15 +1,20 @@
 import { gql } from "apollo-server-express";
 
 const typeDefs = gql`
-  type Person {
-    id: Int
+  type Students {
+    n_z: Int
     name: String
-    gender: String
-    homeworld: String
+    surname: String
+    date_birth: String
+    n_group: Int
+    score: Float
+    city: String
+    address: String
   }
+
   type Query {
-    allPeople: [Person]
-    person(id: Int!): Person
+    allStudents: [Students]
+    student(n_z: Int!): Students
   }
 `;
 

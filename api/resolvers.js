@@ -1,26 +1,22 @@
-const defaultData = [
-  {
-    id: 1,
-    name: "Luke SkyWaler",
-    gender: "male",
-    homeworld: "Tattoine"
-  },
-  {
-    id: 2,
-    name: "C-3PO",
-    gender: "bot",
-    homeworld: "Tattoine"
-  }
-];
+import pool from ".././config/config";
+
+let data = [];
+
+pool.query("Select * from students", (err, result) => {
+  if (err) throw err;
+
+  data = result;
+});
 
 const resolvers = {
   Query: {
-    allPeople: () => {
-      return defaultData;
+    allStudents: () => {
+      return data;
     },
-    person: (root, { id }) => {
-      return defaultData.filter(character => {
-        return character.id === id;
+    student: (root, { n_z }) => {
+      return data.filter(people => {
+        console.log("people: ", people);
+        return people.n_z === n_z;
       })[0];
     }
   }

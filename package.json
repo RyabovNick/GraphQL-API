@@ -22,11 +22,13 @@
     "@playlyfe/gql": "^2.6.1",
     "apollo-server-express": "^2.4.8",
     "express": "^4.16.4",
-    "graphql": "^14.2.1"
+    "graphql": "^14.2.1",
+    "mysql": "^2.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-watch": "^7.0.0"
   }
